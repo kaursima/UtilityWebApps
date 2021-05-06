@@ -1,11 +1,11 @@
-const crypto = require('crypto');
 window.onload = () => {
-    //const crypto = require('crypto');
-    const str = document.querySelector('#string');
+
+    const st = document.querySelector('#string');
     const result = document.querySelector('#result');
     const generate = document.querySelector('#generate');
 
     generate.addEventListener("click" , event => {
-        result.value = crypto.createHash('md5').update(str.value).digest('hex');
-    });
+        const crypt = require('crypto');
+        result.value = crypt.createHash('md5').update(st.value).digest('hex');
+    })
 }
