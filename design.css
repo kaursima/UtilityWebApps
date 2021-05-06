@@ -1,0 +1,54 @@
+.vertical-menu a{
+    display: block;
+}
+
+.head {
+    background-color: aquamarine;
+    height: 5rem;
+}
+
+.application {
+    display: flex;
+    
+}
+
+.apps {
+    padding: 5rem;
+    border: solid;
+}
+
+.logo {
+    height: 3.5rem;
+}
+
+.heading {
+    text-align: center;
+}
+
+.content {
+    padding-top: 3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+.working {
+    display: grid;
+    padding: 4rem;
+    /* border: solid; */
+}
+.text-field {
+    height: 7rem;
+    width: 65rem;
+    border: solid;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    align-content: center;
+}
+.text-f {
+    width : 5rem;
+    height : 5rem;
+}
