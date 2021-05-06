@@ -64,3 +64,18 @@
     width: 5rem;
     margin: auto;    
 }
+.work-2 {
+    display : flex;
+    padding: 1rem;
+}
+.box-2 {
+    border: solid;
+    height: 2.5rem;
+}
+.convert-work {
+    display: grid;
+    padding: 5rem;
+    line-height: 2rem;
+    
+
+}
