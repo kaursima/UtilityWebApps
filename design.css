@@ -52,3 +52,15 @@
     width : 5rem;
     height : 5rem;
 }
+.work {
+    display: grid;
+    padding: 5rem;
+    line-height: 2rem;
+    
+}
+.box {
+    border: solid;
+    height: 2rem;
+    width: 5rem;
+    margin: auto;    
+}
