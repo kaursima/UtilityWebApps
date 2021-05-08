@@ -86,3 +86,21 @@
     margin: auto;
     padding: 10rem;
 }
+.work-3 {
+    display: flex;
+    padding: 2rem;
+}
+
+.work-3-1 {
+    padding: 2rem;
+}
+.work-html-codes {
+    display: grid;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#hex-1, #hex-2 {
+    text-transform: uppercase;
+}

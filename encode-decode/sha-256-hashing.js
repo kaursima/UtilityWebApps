@@ -5,8 +5,7 @@ window.onload = () => {
     const generate = document.querySelector('#generate');
 
     generate.addEventListener("click" , event => {
-        /* document.querySelector("#result").innerText = CryptoJS.MD5(document.querySelector("#string").value) */
 
-        result.value = window.CryptoJS.MD5(st.value);
+        result.value = window.CryptoJS.SHA256(st.value);
     })
 }
