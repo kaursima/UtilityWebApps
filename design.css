@@ -2,19 +2,54 @@
     display: block;
 }
 
-.head {
-    background-color: aquamarine;
-    height: 5rem;
-}
-
 .application {
-    display: flex;
+       display: flex;
+       margin: auto;  
+       padding-top: 10rem;
+           
     
 }
 
-.apps {
-    padding: 5rem;
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+
+.navigator {
+    
     border: solid;
+    height: fit-content;
+    padding: 2rem;
+    height: 3rem;
+    margin: auto;
+    align-items: stretch;
+}
+
+.apps {
+    padding: 3rem;
+    border: solid;
+    border-radius: 15px;
+    width: 8rem;   
+    height: 5rem; 
+    margin: auto;
+    position: relative;
+    background-color: rgb(185, 178, 178); 
+}
+
+.apps span {
+    font-weight: lighter;
+}
+
+.apps:hover {
+    background-color: rgb(199, 139, 149);
+}
+
+.apps a {
+    overflow: hidden;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
 }
 
 .logo {
@@ -104,3 +139,152 @@
 #hex-1, #hex-2 {
     text-transform: uppercase;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    
+
+}
+ul a {
+    color: black;
+    font-weight: bold;
+    
+}
+
+li {
+    float: right;
+    background-color: rgb(185, 178, 178);
+   
+}
+
+li a, .e-c-drop {
+    display: inline-block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.e-c-options {
+    display: none;
+    position: absolute;
+
+}
+
+.e-c-drop:hover {
+    background-color: rgb(211, 165, 173);
+    border-bottom: black groove;
+}
+
+.e-c-options a {
+    display: block;
+    text-align: left;
+    border-bottom: black groove;
+    position: relative;
+    z-index: 6;
+    background-color: rgb(211, 165, 173);
+    
+}
+
+.e-c-options a:hover {
+    background-color: rgb(182, 115, 126);
+}
+
+.encode-decode-link:hover .e-c-options {
+    display: block;
+    
+}
+
+.header {
+    border: solid;
+    background-color: rgb(185, 178, 178);
+}
+
+
+.app-name {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.func {
+    display: flex;
+    
+}
+
+.func div {
+    border: solid;
+    width: 50%;
+    height: 10rem;
+    
+}
+
+.sup {
+    vertical-align: super;
+  font-size: smaller;
+}
+
+.unit-grid {
+    display: flex;
+}
+
+.unit-conversion {
+    display: grid;
+    
+    margin: auto;
+    width: 30rem;
+    padding: 3rem;
+}
+
+.unit-conversion input {
+    height: 2rem;
+}
+
+#convert {
+    width: fit-content;
+    margin: auto;
+}
+
+#unit-conversion-1 {
+    display: block;
+}
+
+.ap input {
+    
+    padding: 2rem;    
+    border-radius: 15px;
+    width: 15rem;    
+    text-align: center;
+    position: relative;
+    
+    background-color: rgb(185, 178, 178); 
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+
+.ap input:after {
+    background-color: green;
+
+}
+.converter-apps {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+}
+
+#explanation {
+    outline: none;
+    border: none;
+    text-align: center;
+
+}
+
