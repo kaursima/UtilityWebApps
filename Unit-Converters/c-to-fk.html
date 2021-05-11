@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Temperature - Unit Converters</title>
+        <title>Kelvins to Celsiuss Fahrenheits - Unit Converters</title>
         <link rel="stylesheet" href="../design.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <script src=""></script>
+        <script src="c-to-fk.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -21,8 +21,8 @@
                     </li>
                     <li class="encode-decode-link"><a href="" class="e-c-drop">Unit Converters</a>
                         <div class="e-c-options">
-                            <a href="">Length Converter</a>
-                            <a href="">Weight and Mass Converter</a>
+                            <a href="length-converter.html">Length Converter</a>
+                            <a href="area-converter.html">Weight and Mass Converter</a>
                             <a href="">Volume Converter</a>
                             <a href="">Temperature Converter</a>
                             <a href="">Area Converter</a>
@@ -60,17 +60,26 @@
                 </ul> </nav>
             
             </header>
-            
         <br><br>
-        <div class="application">            
-            <div class="apps"><a href="k-2-cf.html">Kelvins to Celsiuss/ Fahrenheits </a></div>
-            <div class="apps"><a href="c-to-fk.html">Celsiuss to Kelvins/ Fahrenheits</a></div>
-            <div class="apps"><a href="f-to-ck.html">Fahrenheits to Celsiuss/ Kelvins</a></div>
-                     
-                            
-                            
-                            
-                            
+            <h1 class="heading">Celsiuss to Kelvins/ Fahrenheits Converter</h1>
+        
+        <div class="unit-conversion"> <input type="number" id="c-value" placeholder="Celsiuss"><br>
+            
+            
+
         </div>
+        
+        <div class="converter-apps" style="padding: 1rem;">
+            &nbsp;&nbsp;<div class="ap"><input type="button" id="convert" value="Convert" ></div>
+        </div>
+        <div class="unit-conversion"> <input type="number" id="k-value" placeholder="Kelvins" readonly><br>
+            <input type="number" id="f-value" placeholder="Fahrenheits" readonly>
+            <input type="text" id="explanation" readonly>
+            <input type="text" id="explanation" readonly>
+        </div>
+        
+        
+        
+        
     </body>
 </html>
