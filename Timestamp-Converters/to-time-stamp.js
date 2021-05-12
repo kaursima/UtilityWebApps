@@ -1,7 +1,6 @@
 window.onload = () => {
 
-    const ep2date = document.querySelector('#ep2date');
-    const date2ep = document.querySelector('#date2ep');
+    const date2ep = document.querySelector('#convert');
 
     ep2date.addEventListener("click", toHumanDate);
     date2ep.addEventListener("click", toEp);
@@ -18,13 +17,14 @@ window.onload = () => {
       }
 
       function toEp() {
+
         const y = document.querySelector('#year').value;
         const m = document.querySelector('#month').value;
         const d = document.querySelector('#day').value;
         const h = document.querySelector('#hour').value;
         const min = document.querySelector('#min').value;
         const s = document.querySelector('#sec').value;
-        const ep_result = document.querySelector('#ep-result');
+        const ep_result = document.querySelector('#output');
 
         const HumanDate = new Date(y,m,d,h,min,s);
         ep_result.value = HumanDate;

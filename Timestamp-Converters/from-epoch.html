@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Encoder-Decoder</title>
+        <title>Ephoch Converter</title>
         <link rel="stylesheet" href="../design.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <script src="from-epoch.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="header">
@@ -34,10 +37,10 @@
                             <a href="../Unit-Converters/area-converter.html">Area Converter</a>
                         </div>
                     </li>
-                    <li class="encode-decode-link"><a href="../Timestamp-Converters/timestamp-converters.html" class="e-c-drop">Timestamp Converter</a>
+                    <li class="encode-decode-link"><a href="timestamp-converters.html" class="e-c-drop">Timestamp Converter</a>
                         <div class="e-c-options">
-                            <a href="../Timestamp-Converters/from-epoch.html">Epoch to Human Date </a>
-                            <a href="../Timestamp-Converters/to-time-stamp.html">Human Date to Time Stamp</a>
+                            <a href="from-epoch.html">Epoch to Human Date </a>
+                            <a href="to-time-stamp.html">Human Date to Time Stamp</a>
                         </div>
                     </li>
                     <li class="encode-decode-link"><a href="../RGB-HEX-Converter/rgb-hex.html" class="e-c-drop">RGB/HEX Converter</a>
@@ -45,22 +48,22 @@
                             <a href="../RGB-HEX-Converter/rgb-to-hex.html">RGB to HEX</a>
                             <a href="../RGB-HEX-Converter/hex-to-rgb.html">HEX to RGB</a>
                             <a href="../RGB-HEX-Converter/rgb-to-hex-color-conversion.html">RGB to Hex color converter</a>
-                            <a href="../RGB-HEX-Converter/hex-to-rgb-color-conversion.js">Hex to RGB Color Converter</a>
+                            <a href="../RGB-HEX-Converter/hex-to-rgb-color-conversion.html">Hex to RGB Color Converter</a>
                             <a href="../RGB-HEX-Converter/instant-color-converter.html">Instant HEX to RGB or RGB to HEX Converter Tool</a>
                             <a href="../RGB-HEX-Converter/rgb-to-hex-html-color-codes.html">RGB to Hex Converter – HTML Color Codes</a>
                         </div>
                         </li>
     
 
-                    <li class="encode-decode-link"><a href="encode-decode.html" class="e-c-drop">Encode/Decode</a>
-                    <div class="e-c-options">
-                        <a href="url-Encode-Decode.html">URL Encode Decode - URL Percent Encoding and Decoding</a>
-                        <a href="base64-enode-decode.html">Base64 Encode/Decode</a>
-                        <a href="md5-hashing.html">MD5 Hash Generator</a>
-                        <a href="sha-1-hashing.html">SHA-1 Hash Generator</a>
-                        <a href="sha-256-hashing.html">SHA-256 Hash Generator</a>
-                        <a href="sha-512-hashing.html">SHA-512 Hash Generator</a>
-                    </div>
+                        <li class="encode-decode-link"><a href="../encode-decode/encode-decode.html" class="e-c-drop">Encode/Decode</a>
+                            <div class="e-c-options">
+                                <a href="../encode-decode/url-Encode-Decode.html">URL Encode Decode - URL Percent Encoding and Decoding</a>
+                                <a href="../encode-decode/base64-enode-decode.html">Base64 Encode/Decode</a>
+                                <a href="../encode-decode/md5-hashing.html">MD5 Hash Generator</a>
+                                <a href="../encode-decode/sha-1-hashing.html">SHA-1 Hash Generator</a>
+                                <a href="../encode-decode/sha-256-hashing.html">SHA-256 Hash Generator</a>
+                                <a href="../encode-decode/sha-512-hashing.html">SHA-512 Hash Generator</a>
+                            </div>
                     </li>
                     <a href ="../index.html"><img src="../mobile-app.png" class="logo"><span class="app-name">UTILITY APP</span></a>
 
@@ -68,15 +71,25 @@
             
             </header>
         <br><br>
+            <h1 class="heading">Ephoch to Human Date Converter</h1>
+        
+        <div class="unit-conversion"> 
+            <input type="text" id="input" placeholder="Epoch value"><br>  
+            
 
-        <div class="application">            
-            <div class="apps"><a href="url-Encode-Decode.html">URL Encode Decode - URL Percent Encoding and Decoding.</a></div>
-            <div class="apps"><a href="base64-enode-decode.html">Base64 Encode/Decode</a></div>
-            <div class="apps"><a href="md5-hashing.html">MD5 Hash Generator</a></div>
-            <div class="apps"><a href="sha-1-hashing.html">SHA-1 Hash Generator</a></div>
-            <div class="apps"><a href="sha-256-hashing.html">SHA-256 Hash Generator</a></div>
-            <div class="apps"><a href="sha-512-hashing.html">SHA-512 Hash Generator</a></div>
         </div>
-
+        
+        <div class="converter-apps" style="padding: 1rem;">
+            &nbsp;&nbsp;<div class="ap"><input type="button" id="convert" value="Convert" style="padding: 0; border-radius:0;"></div>
+        </div>
+        <div class="unit-conversion"> 
+            <input type="text" id="output" placeholder="Human Date" readonly><br>
+            
+            
+        </div>
+        
+        
+        
+        
     </body>
 </html>

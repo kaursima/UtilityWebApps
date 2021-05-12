@@ -108,6 +108,14 @@ body {
     height: 2.5rem;
     display: flex;
 }
+
+.box-2 input {
+
+    height: 2rem;
+    
+}
+
+
 .convert-work {
     display: grid;
     padding: 5rem;
@@ -288,3 +296,27 @@ li.dropdown {
 
 }
 
+.radio-bttn {
+    display: flex;
+    margin: auto;
+    padding: 2rem;
+}
+
+.radio-bttn input {
+    padding: 2rem;
+    size: 2;
+       
+}
+
+#characters {
+    width: 17rem;
+}
+
+.op {
+    display: grid;
+
+}
+
+.work-3-1.convert {
+    margin-left: 50%;
+}
