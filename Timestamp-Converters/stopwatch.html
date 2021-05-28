@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Ephoch Converter</title>
+        <title> Stopwatch </title>
         <link rel="stylesheet" href="../design.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <script src="from-epoch.js"></script>
+        <script src="stopwatch.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -73,23 +73,21 @@
             
             </header>
         <br><br>
-            <h1 class="heading">Ephoch to Human Date Converter</h1>
+            <h1 class="heading">Stopwatch</h1>
         
-        <div class="unit-conversion"> 
-            <input type="text" id="current" readonly style="text-align: center;"><br>
-            <input type="text" id="input" placeholder="Epoch value"><br>  
             
-
-        </div>
+            <div class="unit-conversion"> 
+                <input type="text" value = "0" id="output" readonly style="text-align: center;"><br>
+                
+                
+            </div>
         
         <div class="converter-apps" style="padding: 1rem;">
-            &nbsp;&nbsp;<div class="ap"><input type="button" id="convert" value="Convert" style="padding: 0; border-radius:0;"></div>
+            &nbsp;&nbsp;<div class="ap"><input type="button" id="start" value="Start" style="padding: 1rem; border-radius:0;">
+                <input type="button" id="stop" value="Stop" style="padding: 1rem; border-radius:0;">
+                <input type="button" id="reset" value="Reset" style="padding: 1rem; border-radius:0;"></div>
         </div>
-        <div class="unit-conversion"> 
-            <input type="text" id="output" placeholder="Human Date" readonly><br>
-            
-            
-        </div>
+        
         
         
         

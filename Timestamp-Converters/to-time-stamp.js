@@ -1,5 +1,13 @@
 window.onload = () => {
 
+  const current = document.querySelector('#current');
+
+   let int = setInterval(() => {
+    const today = new Date();
+    const time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    current.value = "Current Time - " + time;   
+  }, 1000);
+
     const date2ep = document.querySelector('#convert');
 
     ep2date.addEventListener("click", toHumanDate);
